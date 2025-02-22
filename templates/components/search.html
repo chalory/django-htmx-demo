@@ -1,0 +1,12 @@
+<div class="search-container mb-8">
+    <input type="search"
+           name="q"
+           placeholder="Search tasks..."
+           class="w-full p-2 border rounded-lg"
+           hx-post="{% url 'search' %}"
+           hx-trigger="input changed delay:200ms"
+           hx-target="#search-results">
+    <div id="search-results" class="mt-4">
+        {% include 'components/results.html' %}
+    </div>
+</div>

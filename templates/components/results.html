@@ -1,0 +1,9 @@
+<div class="space-y-2">
+    {% if page.object_list %}
+        {% include 'components/task_list.html' %}
+    {% else %}
+        <div class="text-gray-500 text-center p-4">
+            No tasks found
+        </div>
+    {% endif %}
+</div>
